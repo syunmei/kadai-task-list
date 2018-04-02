@@ -15,6 +15,7 @@
       @for(task <- taskSep) {
         <tr>
           <td><a href="@routes.GetTaskController.index(task.id.get)">@task.id.get</a></td>
+          <td>@task.status</td>
           <td>@task.content</td>
         </tr>
       }
